@@ -628,7 +628,7 @@ implementation
         WpfSbTarget.Append('<Page Include="' + WpfTbRealParentPath.Text + '\' + WpfTbPrjPath.Text + '\' + WpfTbUcName.Text + '.xaml">'  + Environment.NewLine);
         WpfSbTarget.Append('  <Generator>' + 'MSBuild:Compile' + '</Generator>'  + Environment.NewLine);
         WpfSbTarget.Append('  <SubType>' + 'Designer' + '</SubType>'  + Environment.NewLine);
-        WpfSbTarget.Append('</Compile>'  + Environment.NewLine);
+        WpfSbTarget.Append('</Page>'  + Environment.NewLine);
         WpfSbTarget.Append('...'  + Environment.NewLine);
     
         WpfTbTarget.Text := WpfSbTarget.ToString();      
