@@ -615,6 +615,7 @@ implementation
     }
     {
     <Page Include="D:\2024_proj\WPF_ERP\WPF_LIB\WPF_CTL\use_Calendar.xaml">
+      <Link>WPF_LIB\WPF_CTL\use_Calendar.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -626,6 +627,7 @@ implementation
         WpfSbTarget.Append('</Compile>'  + Environment.NewLine);
         WpfSbTarget.Append('...'  + Environment.NewLine);
         WpfSbTarget.Append('<Page Include="' + WpfTbRealParentPath.Text + '\' + WpfTbPrjPath.Text + '\' + WpfTbUcName.Text + '.xaml">'  + Environment.NewLine);
+        WpfSbTarget.Append('  <Link>' + WpfTbPrjPath.Text + '\' + WpfTbUcName.Text + '.xaml</Link>'  + Environment.NewLine);
         WpfSbTarget.Append('  <Generator>' + 'MSBuild:Compile' + '</Generator>'  + Environment.NewLine);
         WpfSbTarget.Append('  <SubType>' + 'Designer' + '</SubType>'  + Environment.NewLine);
         WpfSbTarget.Append('</Page>'  + Environment.NewLine);
